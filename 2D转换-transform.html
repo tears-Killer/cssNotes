@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            /* 向左向下移动100px */
+            transform: translate(100px, 100px);
+        }
+
+        div:last-child {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /* 百分比移动的是以盒子本身长宽为标准 */
+            transform: translate(50%, 50%);
+        }
+
+        /* 让盒子垂直居中 */
+        section {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        section p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <section>
+        <p></p>
+    </section>
+</body>
+
+</html>

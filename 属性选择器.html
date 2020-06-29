@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            cursor: pointer;
+        }
+
+        /* 属性选择器的权重是10 */
+        button[disabled] {
+            cursor: default;
+        }
+
+        /* 属性等于值 */
+        input[type="search"] {
+            color: blue;
+        }
+
+        /* 以某个值开头 */
+        div[class^="icon"] {
+            color: red;
+        }
+
+        /* 以某个值结尾 */
+        div[class$="icon"] {
+            color: blue;
+        }
+
+        /* 只要包含某个值 */
+        div[class*="icon"] {
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <button>按钮</button>
+    <button>按钮</button>
+    <button disabled="disabled">按钮</button>
+
+    <input type="text" value="文本框">
+    <input type="text" value="文本框">
+    <input type="text" value="文本框">
+    <input type="search" name="" id="" value="搜索框">
+    <input type="search" name="" id="" value="搜索框">
+    <input type="search" name="" id="" value="搜索框">
+
+    <div class="icon1">图标1</div>
+    <div class="icon2">图标2</div>
+    <div class="icon3">图标3</div>
+    <div class="iicon">图标3</div>
+</body>
+
+</html>

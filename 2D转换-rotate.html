@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 1px solid black;
+            /* 顺时针旋转45度 */
+            /* transform: rotate(45deg); */
+            transition: all 2s linear;
+        }
+
+        /* 鼠标经过时旋转360度 */
+        img:hover {
+            transform: rotate(360deg);
+        }
+
+        img:last-child {
+            width: 200px;
+            height: 200px;
+            transition: all 2s linear;
+            /* 选择旋转的顶点 */
+            transform-origin: left bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="img/4.jpg" alt="">
+    <img src="img/login.jpg" alt="">
+</body>
+
+</html>
